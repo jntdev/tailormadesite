@@ -10,7 +10,7 @@ body {
 }
 
 .nav {
-    background-color: rgb(151, 23, 0);
+    background-color: #971700;
     position: fixed;
     width: 100%;
     height: 60px;
@@ -28,12 +28,20 @@ body {
     justify-content: flex-end;
 }
 
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin-right: 30px;
+    margin-top: 1%;
+}
+
 a {
     color: white;
     font: Helvetica;
-    font-size: 40px;
-    margin-right: 10%;
-    margin-top: 0.5%;
+    font-size: 35px;
 }
 
 .header {
@@ -200,4 +208,29 @@ h2 {
 .conclud {
     color: black;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1031px) {
+    .flexdir {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 861px) {
+    .header {
+        background-size: 130%;
+    }
+}
+
+@media screen and (max-width: 833px) {
+    .header {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        padding-top: 10%;
+    }
 }
