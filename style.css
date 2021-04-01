@@ -210,13 +210,6 @@ h2 {
     font-size: 20px;
 }
 
-
-/* @media screen and (max-width: 1149px) {
-    .header {
-        background-size: 120%;
-    }
-} */
-
 @media screen and (max-width: 1031px) {
     .flexdir {
         flex-direction: column;
