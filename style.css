@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-    width: 20%;
+    width: 300px;
 }
 
 .menu {
@@ -47,6 +47,7 @@ a {
 .header {
     width: 100%;
     height: 50vh;
+    min-height: 300px;
     background-image: url(img/bannertest.jpg);
     background-color: rgba(255, 255, 255, 0.26);
     background-repeat: no-repeat;
@@ -149,7 +150,7 @@ h2 {
 }
 
 .pict1 {
-    height: 90vh;
+    min-height: 580px;
     text-align: center;
     background-image: url(img/texture.jpg);
     background-repeat: repeat-x repeat-y;
@@ -165,7 +166,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 580px;
 }
 
 .paral {
@@ -220,6 +221,9 @@ h2 {
     .header {
         background-size: 130%;
     }
+    .paral {
+        background-position: 20% 0%;
+    }
 }
 
 @media screen and (max-width: 833px) {
@@ -232,5 +236,26 @@ h2 {
     .title {
         flex-direction: column;
         padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tailor {
+        width: 100%;
+    }
+    .paral {
+        background-position: 30% 10%;
+    }
+    .design {
+        width: 100%;
+    }
+}
+
+
+/* ecran en paysage */
+
+@media screen and (max-height: 450px) {
+    .paral {
+        background-position: 30% 50%;
     }
 }
