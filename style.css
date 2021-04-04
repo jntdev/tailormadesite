@@ -13,13 +13,45 @@ body {
     background-color: #971700;
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 55px;
     display: flex;
     z-index: 1000;
 }
 
-.logo {
-    width: 300px;
+.navbar {
+    background-color: #971700;
+    height: 60px;
+}
+
+.navbar-brand>a {
+    background-color: white;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.navbar-item {
+    color: white;
+}
+
+.navbar-burger {
+    margin-top: 5px;
+    margin-right: 30px;
+    background-color: #971700 !important;
+}
+
+.navbar-burger>span {
+    height: 2px;
+    width: 20px;
+    color: white;
+    background-color: white;
+}
+
+.navbar-item:hover {
+    color: #971700 !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logo:hover {
+    background-color: #ffffff !important;
 }
 
 .menu {
@@ -216,6 +248,14 @@ h2 {
 @media screen and (max-width: 1031px) {
     .flexdir {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-brand>a {
+        margin-top: 4px;
+        margin-left: 5px;
+        border-radius: 2px;
     }
 }
 
