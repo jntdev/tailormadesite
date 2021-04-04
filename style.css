@@ -13,9 +13,27 @@ body {
     background-color: #971700;
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 55px;
     display: flex;
     z-index: 1000;
+}
+
+.navbar {
+    background-color: #971700;
+    height: 60px;
+}
+
+.titlelogo {
+    margin-top: 15px;
+}
+
+.navbar-item {
+    color: white;
+}
+
+.navbar-item:hover {
+    color: #971700 !important;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .logo {
